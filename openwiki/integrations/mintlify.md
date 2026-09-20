@@ -3,9 +3,6 @@ type: integration
 title: Mintlify Integration
 description: Mintlify renders the generated LangChain documentation tree and uses docs.json as its renderer-facing site contract. This page explains the build, navigation, OpenAPI, validation, preview, and production publication boundaries.
 tags: [mintlify, documentation, rendering, deployment, site-configuration]
-verified:
-  - by: openwiki/0.4.3
-    at: 2026-09-17T08:22:51.028Z
 sources:
   - id: openwiki-source-5c124605ed6e394bffee862c
     resource: repo://.github/workflows/_check-links.yml
@@ -27,11 +24,18 @@ sources:
     resource: repo://pipeline/core/builder.py
   - id: openwiki-source-23775c3de52f3ab95a13cb8b
     resource: repo://README.md
+  - id: openwiki-source-49f717adb7cc59501f5c17ac
+    resource: repo://scripts/filter_mint_broken_links.py
   - id: openwiki-source-a9a8730b7e43a5ad2d0af4f1
     resource: repo://src/docs.json
   - id: openwiki-source-554339f52225d7d8edff3ed0
     resource: repo://src/style.css
-generated: { by: "openwiki/0.4.3", at: "2026-09-11T08:21:01.441Z" }
+  - id: openwiki-source-38d325b9c51f3c8dfd528917
+    resource: repo://tests/unit_tests/test_filter_mint_broken_links.py
+verified:
+  - by: openwiki/0.4.3
+    at: 2026-09-20T08:19:24.227Z
+generated: { by: "openwiki/0.4.3", at: "2026-09-20T08:19:24.227Z" }
 ---
 
 # Mintlify Integration
@@ -101,7 +105,7 @@ make broken-links
 make broken-links-with-anchors
 ```
 
-The targets build first, invoke `mint broken-links` in `build/`, and fail only when filtered output retains actionable indented link entries. The filter intentionally removes deployment-generated OpenAPI-route false positives and standalone-snippet reports. The reusable workflow uses Node 22, caches or installs the global Mint CLI, applies a KaTeX workaround, then runs the anchor check and Agent Server OpenAPI validation.
+Both targets depend on `build`, run `mint broken-links` from `build/`, and enable `--check-redirects`; the anchor variant also enables `--check-anchors`. They fail only when filtered output still contains an indented link entry, so redirect destinations are checked by the same failure gate as ordinary links. The filter removes only known non-actionable output: deployment-generated Agent Server, LangSmith REST, and Control Plane OpenAPI routes; whole standalone-snippet report sections; selected legacy relative paths; and, only for the anchor target, three SmithDB migration anchors. It must not be broadened casually: `tests/unit_tests/test_filter_mint_broken_links.py` asserts that snippet and known OpenAPI noise disappear while an ordinary missing route and a non-exempt anchor remain. The reusable workflow uses Node 22, caches or installs the global Mint CLI, applies a KaTeX workaround, then runs the anchor check and Agent Server OpenAPI validation.
 
 Snippet imports in MDX files are expanded by Mintlify at render time; they are not served as standalone pages. The build system processes snippets and stores language-specific versions at /build/snippets/{python|javascript}/, and Mintlify inlines them into importing pages. The builder rewrites imports in versioned pages to those language-specific copies, while retaining a Python-default copy for unversioned consumers.
 
@@ -116,7 +120,7 @@ make export-htmltest
 
 The make export target builds the generated documentation and runs mint export from build/, producing build/export.zip by default. It requires a recent Mint CLI with export support, Node LTS 20 or 22, and an Enterprise Mintlify plan.
 
-Offline export validation unpacks the Mint archive and intentionally uses htmltest only for external URLs because Mintlify export does not emit a complete page set; internal and internal-hash checks are disabled. Passing `make htmltest` therefore does not prove internal navigation. Use Mint's generated-tree link targets for that concern.
+`make htmltest` is a post-export check, not an exporter: it requires the `htmltest` and `unzip` executables plus an existing `EXPORT_ZIP` (default `build/export.zip`). It unpacks the archive under `HTMLTEST_UNPACK_DIR` (default `build/mint-export-htmltest-unpacked`) and accepts `HTMLTEST_ARGS` for extra checker flags. Offline export validation unpacks the Mint archive and intentionally uses htmltest only for external URLs because Mintlify export does not emit a complete page set; internal and internal-hash checks are disabled. The configuration still checks anchors, images, scripts, meta, generic content, and meta refresh, while suppressing known export canonical and external-service noise. Passing `make htmltest` therefore does not prove internal navigation. Use Mint's generated-tree link targets for that concern.
 
 ## Publication and preview operations
 

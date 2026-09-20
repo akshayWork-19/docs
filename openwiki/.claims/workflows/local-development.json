@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:68ed03a613d7a95bab83ee001b5ca0fa0aca79a40c600ed2745e93b15e89b296",
+  "pageVersion": "sha256:bd45fe8d5af275ae9e99c8958532cd327630253d8cc42af1645ddc906605c542",
   "claims": [
     {
       "id": "claim_53bb7401e0214d36ae0249e90fe94e42",
@@ -248,11 +248,11 @@
     },
     {
       "id": "claim_58be6c2f43314d428588df81e49e90ab",
-      "statement": "`make broken-links` and `make broken-links-with-anchors` build the documentation and run Mint from `build`; the anchor variant passes `--check-anchors` and both filter known non-actionable reports before failing on remaining link lines.",
+      "statement": "`make broken-links` and `make broken-links-with-anchors` build the documentation and run Mint from `build` with `--check-redirects`; the anchor variant also passes `--check-anchors`, and both filter known non-actionable reports before failing on remaining link lines.",
       "evidence": [
         {
-          "resource": "repo://Makefile#L140-L178",
-          "version": "repo-lines-v1:sha256:2a69b647cc5e6cd73c85a1e80a9182d57d1e36e79e20835796fc7951360692bb:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNjRkMDAwYTRiY2E0YTVmOWU3YTI2ZmM5ZTVmOGUwYzE0NDhhOGVlYmIxZDhjODkzM2ZlNzQ1NmQ1OGM1YjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyNWEwZjFmYWVhMDJmMmYwNTJjZmY1NzkwYjk5MjFkOTIyNWYyNzY1ODE5MWI3MzhlZDA1MjIxNWM2YWI2YTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMWM1NjEyZmIzODM3ZTIyODUzOTY4Y2Y2ZDEzYWRjZjcwYmJjM2M0Y2RiNDY2ZGY2NGUzOGNiNmU2Yzc0MjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdkYWQ0ZjcyYTM0MGM5ZTdkYzM2NDQ4NjBiYzQ0ZTdkNzhjMDQ2YTdmNWIxMGQ5M2I5ZDI5NjkwNDQ4ZGRhYWEifQ"
+          "resource": "repo://Makefile#L140-L182",
+          "version": "repo-lines-v1:sha256:e0e63761a27a56c78079179e75d5e979ec52edeba3838b14495fb1fe4f416b98:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNjRkMDAwYTRiY2E0YTVmOWU3YTI2ZmM5ZTVmOGUwYzE0NDhhOGVlYmIxZDhjODkzM2ZlNzQ1NmQ1OGM1YjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZjM2MjI5MWYyYjM1MGIyYWUwZjhhNDMxNTI0MjA3ZTA5ODEzNmM5MGE0MzkwNDQwZDk4OTY5YTVhNzZiMDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMWM1NjEyZmIzODM3ZTIyODUzOTY4Y2Y2ZDEzYWRjZjcwYmJjM2M0Y2RiNDY2ZGY2NGUzOGNiNmU2Yzc0MjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRiOTVhMGIxODkwMjBkMjhjYjYyYWM0MTZmM2MxNTJlYjY1ZTQxMDI0NWNiZWMzZTI4ZGM0ZjcxNDUwNGY0ODkifQ"
         }
       ]
     },
@@ -297,6 +297,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-14T08:24:18.469Z"
+    "at": "2026-09-20T08:19:24.227Z"
   }
 }

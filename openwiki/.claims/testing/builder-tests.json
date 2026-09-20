@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:d0b250d0e495c95f0106c26f96bb736381f92f9400540a9092e198b5ea36f572",
+  "pageVersion": "sha256:743015d82edef6b3ae0c9798cfbf3c94357d4924eaf794696d98cc1730b3f8a1",
   "claims": [
     {
       "id": "claim_935a9971500447bd90ddd7eee1f0f20e",
@@ -69,20 +69,6 @@
         {
           "resource": "repo://tests/unit_tests/test_builder.py#L299-L464",
           "version": "repo-lines-v1:sha256:450635cbdfb01b3b7b09c3a08a2342cd7a4af76cd6156df63ae53a0f9dfea643:eyJzZWxlY3RlZExpbmVDb3VudCI6MTY2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzMjMyYzUwNjhiYzA3MmZiYzQ5NmQwZjE4YzU5YjBkNmJkOWMxMGY1ZTRkM2Q5NWVkYzY2MTI1Yzc2NWRlZGY4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkNTA1NzIwNDFiNDE5Yjk3MWZkYjM1NzBhYmY3YTJiODE5NGIzZDUzNDk0ZWUyZTA0NTcxODQ3Yzg5YjY5ZDc2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI5M2E2NzIwNTI1MjhjNDgxMzYwZGUwMWU1NzgyODY2NjA2NTk4Zjg3MGE2YzRhMWIzOWRiZjVkNjA4MDVhNzAxIn0"
-        }
-      ]
-    },
-    {
-      "id": "claim_c81975358d4f49d48b1ae13b45978f15",
-      "statement": "_rewrite_managed_deep_agents_links() inserts target language into /langsmith/managed-deep-agents paths: /langsmith/managed-deep-agents-quickstart with target_language='python' becomes /langsmith/python/managed-deep-agents-quickstart. Already-prefixed links are preserved unchanged.",
-      "evidence": [
-        {
-          "resource": "repo://pipeline/core/builder.py#L218-L237",
-          "version": "repo-lines-v1:sha256:0722dc2edab5c9c5b6c818c8a3c231b32c94818418e2e2dc59789c9d7a094070:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwMzQ1YzE1ZDFhNTBjMWM5Y2M4MTgwM2FlYzJlODZmY2Y3Yzk4ZjRjMWEyZmMxNWYwZDY3M2MyNDRhYzFhMDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkODJjMmIwMTY5ZjA2MTU1NjNmYzJmZjFjOGYwMjc3Mjk5OWE2ZjRlYjBhZWQzYmM0YzYyMGI3ZWI0NmFiZTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2M2IyZTFjZmFlOWM0MzI0ODVjYTBlN2Y2MGVhMGZlN2FjOWMwZmI1MWZlMzI0NTEyMjVhN2U1NTc4NzIzNjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxYTU2MjdjMTg3NDI4MzRiM2E4OTBiYmYwNWU2NjE2ODRkNWMxOTUwOTlkZDllZjIzMjIwYzc2M2E1MTVjZGYifQ"
-        },
-        {
-          "resource": "repo://tests/unit_tests/test_builder.py#L569-L587",
-          "version": "repo-lines-v1:sha256:508e254aa2bc0a3881d213b4819e8e1dbd27e154354487aad040eaa5d107b243:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyODNlNzZkNGRlNmVhOWZiODc2MTY5MzQ2Mzg5ZmMzOTNmYTUzZmRiZjg0NTViMDgyMTU2OGI3YjVlMDBkZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlMDc4OGM3ZDY0YTM5NGQyODA4MzU0YzM0NmY4ZGViYjlmOTg2ZTM0NzA1MDIyYTRiMTU4YTcxNjBkYjg4ZjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzZGYyYWNmMDZlOGMzZjAzYzcxMzVjNmU4YWM1YTljYTU0MzJhYmUwNmE3NGFjYTBmZGQ5YTUzYTAwOGY5ODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkNjUwOTE1YmFkODZhZGRkMDM3MWRjMGEzOTI5YmEzMmI0NTBiMzMzOTk2ZWQ1N2Y3ODNhNThjM2EzMzJlYjkifQ"
         }
       ]
     },
@@ -168,15 +154,15 @@
     },
     {
       "id": "claim_2e717221e2b84ef895a138c23f6ab256",
-      "statement": "_generate_llms_txt() produces a custom index to override Mintlify's 100,000-character truncation. It indexes all .mdx files, extracts frontmatter (title, description), excludes noindex pages and snippets, and splits large sections into indexed sub-files at <section>/llms.txt. Root file delegates to section indexes via markdown links.",
+      "statement": "_generate_llms_txt() writes a custom complete index rather than Mintlify's truncating generated index. It indexes eligible .mdx files and inferred OpenAPI operations, excludes snippets and noindex pages, emits small sections in root and delegates large sections to root-linked directory llms.txt files, then validates the resulting index tree.",
       "evidence": [
         {
-          "resource": "repo://pipeline/core/builder.py#L1666-L1792",
-          "version": "repo-lines-v1:sha256:b976f8eca46b8478edf5a3575e540e40f338bfbea0d6a3b977b0412b30ca94b0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZTRlMGE5MTRiNDZmYjY4OWYxZTZhNWM4ZTQ3NTk2MGIxYWY2NDg1MDdhNTQ4NWNkNWE3NTg4ZTdlODAyYmY1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5ZTY0OTJiYTIzNzE4Y2IyNTViMzczZTc0ZTlmZmZjYzMyZmM5MDQ3YjFmODE1ZGI2NDgwMDZhY2ZmOTQ1ODk3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjYTY1Mzg2ODYyYTAxZWZhNDRkMTExMTcyOWU2Njg1ZGY3ODRjNTFkZjQ4NmZlMjE1ZDhmMWI5Y2M3MWMxZjVjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmYjdkNjBhMzcyMTQ1NjgzMTlhZDA5MTUxMjhhYTdlYTZkZDNiYmUzNTk5YTY1MzI0YzUxZmIxMTRjY2NhNzZlIn0"
+          "resource": "repo://pipeline/core/builder.py#L1667-L1811",
+          "version": "repo-lines-v1:sha256:9cec7299c57821288215289f4cdc2f223abb0a913f615473518e5b99d3a29003:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjZTRlMGE5MTRiNDZmYjY4OWYxZTZhNWM4ZTQ3NTk2MGIxYWY2NDg1MDdhNTQ4NWNkNWE3NTg4ZTdlODAyYmY1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI5ZTY0OTJiYTIzNzE4Y2IyNTViMzczZTc0ZTlmZmZjYzMyZmM5MDQ3YjFmODE1ZGI2NDgwMDZhY2ZmOTQ1ODk3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjYTY1Mzg2ODYyYTAxZWZhNDRkMTExMTcyOWU2Njg1ZGY3ODRjNTFkZjQ4NmZlMjE1ZDhmMWI5Y2M3MWMxZjVjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmYjdkNjBhMzcyMTQ1NjgzMTlhZDA5MTUxMjhhYTdlYTZkZDNiYmUzNTk5YTY1MzI0YzUxZmIxMTRjY2NhNzZlIn0"
         },
         {
-          "resource": "repo://tests/unit_tests/test_builder.py#L675-L819",
-          "version": "repo-lines-v1:sha256:a9624a29b882912eaa979bb7688da250c58c2edb0e19e0695f149d6d226af02b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4NDEzMTJlYThmMWVkMmM5NDNmYTViNDBmM2E4M2RhZTM3MjFkZTZkNGEzZWYwZmVmY2UwM2IzMGNlMDZiOGQwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmZjUxNTM1ZmEyNWMwZTI0ZTRkNTdiYzE4NDRjOTU2N2Q3ZTQxYTYzY2YwMmFkYzk3MmYxODI2ZDU5MmNkYmJjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4ZmUxNzAxYTVmZGNkNzcwNDEwYmViNWU5NDY4MmE2MTJhYzYxNWU1NDNhMzFlZTQxOTYxZTU2MDRlNzQ0MjcxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2NWViMzFlZTM1NDA4ZjRhZjNhOTJlZmNmMTg0OTdmM2RiZGY5NGMzZWVhMTYyN2MwMDdmYzlhNjE3NzY2NjFkIn0"
+          "resource": "repo://tests/unit_tests/test_builder.py#L675-L861",
+          "version": "repo-lines-v1:sha256:841b75e6742c4c6ddcf485f14aa583612ed28c603f44fee7046b26211f82b186:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4NDEzMTJlYThmMWVkMmM5NDNmYTViNDBmM2E4M2RhZTM3MjFkZTZkNGEzZWYwZmVmY2UwM2IzMGNlMDZiOGQwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkMzg0ZTA3MzRhMjNmYTJmNzlmZGUzNjdkZGViNzhkOTAxODhjNmM5YjkzZmIzZGI2ZDVhMTY5ZTljMWQ0OThlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4ZmUxNzAxYTVmZGNkNzcwNDEwYmViNWU5NDY4MmE2MTJhYzYxNWU1NDNhMzFlZTQxOTYxZTU2MDRlNzQ0MjcxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2NWViMzFlZTM1NDA4ZjRhZjNhOTJlZmNmMTg0OTdmM2RiZGY5NGMzZWVhMTYyN2MwMDdmYzlhNjE3NzY2NjFkIn0"
         }
       ]
     },
@@ -196,15 +182,19 @@
     },
     {
       "id": "claim_0359065f95164806ac2809c884abbfed",
-      "statement": "_generate_llms_full_txt() produces a complete-text corpus by collecting all .mdx pages (excluding snippets and noindex), reading and inlining snippet imports so agents see full content, and splitting language variants into separate files (oss/python/llms-full.txt and oss/javascript/llms-full.txt). Root file opens with site title and links to language splits.",
+      "statement": "_generate_llms_full_txt() builds a complete-text corpus from eligible .mdx pages, excluding snippets and noindex pages, stripping frontmatter, and recursively inlining recognized contained snippet imports up to depth six. It splits OSS language variants into oss/python/llms-full.txt and oss/javascript/llms-full.txt; root llms-full.txt opens with site metadata, links to those splits, and holds unversioned page bodies.",
       "evidence": [
         {
-          "resource": "repo://pipeline/core/builder.py#L1541-L1664",
+          "resource": "repo://pipeline/core/builder.py#L1542-L1665",
           "version": "repo-lines-v1:sha256:0ad6534bb1f189c0b3e97ec9f97dbadb3c99f4bc0e063a2281d161c49f01b587:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5YmZjYzBjZGJlMjVmN2FmZjUyY2ViODI1YTk3M2ZlYzkxZWExYjViNGNhOWVkYTk5NTJlODk0YTc2YTU4ZDFkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1OTA5YTUzYTYxOGQwMjhlMWQzMDAwYzBhN2FiY2VlY2JlNWZiMzdmNGU1MTFlZmU0NjY0M2ZhZDZlNjY4NzJmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyY2E4MGUyMWY4N2MxZDk3OGE0NzQ1YTgzOTdhMmRhMjFjYjFmMDRjMWVhYTFhOGMwNDZiMTdkOWEzNTU3NTQ2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxNDQ1NThjY2JmYjM2ODUxN2U2MWZkYThhNzJiNGRhODk3YmNiMDcyM2I1ZTVkNWYwMWRhMGE1NzEyMGM0MWU2In0"
         },
         {
-          "resource": "repo://tests/unit_tests/test_builder.py#L822-L867",
-          "version": "repo-lines-v1:sha256:7b55f675685040b4bd62bfeb1c7c1f83cccbc0658066690bc726c02fa741ffa2:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmZWVjNzNjY2Y2MzQ3YTMwNTk5ZjVhZjczMDk3NWY4M2JiNjYwMTExZWY4OGUwZDUyNTk1N2UyYWY4ZWNkOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkZTYxMDkwZTJhMGI2OGIzM2QxNjU5NTdkZWVmNTE0NjVlNGU3YWQ0MDljNjE3NzE2Y2ZlZmJhNjhkOTYxZTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkyNjQ4YWU5MjliOTIwZDdlMjQwNjcyZmE1NzM0NmJjOTQ0YTZhNDg5NjdkZGNlNDBlMDY4ZGRkMmRjODc0YzEifQ"
+          "resource": "repo://tests/unit_tests/test_builder.py#L864-L909",
+          "version": "repo-lines-v1:sha256:7b55f675685040b4bd62bfeb1c7c1f83cccbc0658066690bc726c02fa741ffa2:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVmZWVjNzNjY2Y2MzQ3YTMwNTk5ZjVhZjczMDk3NWY4M2JiNjYwMTExZWY4OGUwZDUyNTk1N2UyYWY4ZWNkOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM0MDMwNDRiYjZkZjk1ZTg3NDEwNjEyZWE1YzhiYmE0NmM5NDVmM2YyMTg3MTNiNjY0MjM1MDJjMTRmN2U5NzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkyNjQ4YWU5MjliOTIwZDdlMjQwNjcyZmE1NzM0NmJjOTQ0YTZhNDg5NjdkZGNlNDBlMDY4ZGRkMmRjODc0YzEifQ"
+        },
+        {
+          "resource": "repo://tests/unit_tests/test_builder.py#L996-L1034",
+          "version": "repo-lines-v1:sha256:e0b05d51c5946102230819f572b17efdc95ea126a13ceb5e2ff5ff56ece72d52:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1MjgyYWJlNmFiNTAxOGFhNTBiZWE2NjRmN2FkZmVjYjhiM2NkNmQ2NmUwMDg1ZGE0ZmYzNjBiODljMzNjYjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNlNjJiODBiZDFjMDljMjNiYzFmMTY4Njg3NGJkZmE4NjE4NjNjZThmMzk1MzlkYmQ4ZTkzOTE0ZjU0YTIzZjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI4MTU3YTVlOTg5YWU1ZGEwNzQ2ZWFkN2U1NzlmMDRhNDk4ODA2NWYxMjQyOGViZDNjY2ExZTVlYjNhOThjNDkifQ"
         }
       ]
     },
@@ -243,24 +233,6 @@
         {
           "resource": "repo://tests/unit_tests/test_builder.py#L711-L731",
           "version": "repo-lines-v1:sha256:7db841c6b0022b0f18335c8f629dccd74bed62079dfa6da331594c580a121368:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkNDE2YWQ3MjFjY2JiOWM0ZDM3ODFlZGFjYTUxM2IzZTZiM2NhYTE0YjZhMWY0ZGZjMmZjNjkxYTIzNjVmYjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhNDJjZTk0YWE0NGM2YmZiZjU1YTZlOWU0YWY1MGRmYThlNTlmNWZmMWNkNTE4NmVlZDkxNGM4N2VlNTQ5MDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU5OTY1M2M2MWM4N2JkN2RlZTFiYjEyMWZjMTM0NTVkZjk4ZjEzMTJhNmNkNzFmMTlkOGE1MTVkNjgyNjhjYTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY2ODRmNDA0MjY0MGNhYzY2YTc1ZDAxYzUwOGZjZWU4NDgwNGVmOWJkOWI0NDNkN2FkNTJjNWM5Mjg1NzE3OWEifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_8c82534ceb8b4a0a9f5c7de236454249",
-      "statement": "DocumentationBuilder provides three build entry points: build_all() clears the build directory and runs the full pipeline (versioned OSS, unversioned products, shared files, npm snippets, llms.txt generation); build_file(path) builds one file with version-aware routing (OSS files split per language, others build once); build_files(paths) builds multiple files showing a progress bar (hidden in CI).",
-      "evidence": [
-        {
-          "resource": "repo://pipeline/core/builder.py#L402-L433",
-          "version": "repo-lines-v1:sha256:f29bdf9adbc6500661d11b3888ba091ab6c3546716010c439aac374b13e164c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMzNmM3MmYwZDQ1NmNhZDMyZTFjZGU2NDhlYjk4NmRjZGRkZTc0YWI3MDg4YjIyN2M2MWVkM2I3NzRkMGExMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyYjc5YmRkY2NmZDljMTVmNzlhNWFiYjk0MGJlMWZmYzk5MjY4ODhhNzlhNjY3ZjFjZjViM2UyODIzODFhNzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxMDU0YTM4NGVjNDgzMTA0MDBlZjA4ODdiNWFkZTMxOWM5OWQ1ZWIxM2JjYmMyZTE2ZWM1N2U1MTkyZmZiOTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1ZTBhNmNkMjJiZTlkNDMwMzMwZGYxNmZmZDdlNTZmNWU1YzJlZGZhYmNhMWI5M2QyZjcwZjkyZWI3YTVhNzMifQ"
-        },
-        {
-          "resource": "repo://pipeline/core/builder.py#L658-L704",
-          "version": "repo-lines-v1:sha256:b106234ad0425be785ac8ff3e26ce2a8e60923019e0027d4c52384324d5fd530:eyJzZWxlY3RlZExpbmVDb3VudCI6NDcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhYWVhMGQ1MDc0MjhhNDFiN2IzMzczN2M5NDIxZDY2ZjI1MzNhZWM2YTRhMDFmZDllYzgzNjM4MmQ2OTZmYWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhZGFmYWE5Yjg3MWY1MGNiYjQ1MDg1YTMxM2Q0Yjk0ZjI1ZDM4NzAzMDYyZWRmZjcxZTlkNjEyMjRlZDRlZTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM4NWY0NzE0OGU2ODg3NjY0MjFkZTk4NjE0ZTkzNmI2ZmQ3ZThhN2E1ODNkY2ZjYzYzMDhhZTUxZDQ0MTM4NWYifQ"
-        },
-        {
-          "resource": "repo://pipeline/core/builder.py#L78-L139",
-          "version": "repo-lines-v1:sha256:949e4203139c8a0525ca36ea161a9e5ecc45b767ad72829f8d3d2624562a9d96:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3YzVhYjc5M2VjZTcyMTM3MjRiODY4N2NmOTI5ZjBmYWMyZjBkYTA1YjlmZjVlODM0YWMyNzQzZWQ3MTNkYjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM2NWVmYjcwNTkxYjM3NDlkZGZiZjI1N2VlNDEwNmNiOWRiZGUxMmM0YTg2YTYwYTZlOTBjNmVkMzdlNjdiZGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIxZjE1NmU0ZDE1OGJlNGRkMzExOTNjZGRiZWQ2NGFhOTExYjEzOTUxOWZiMTI5YWEzMjFmZmQ4NzQ2OTdiNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBlNDk4ZDg2ODA5MTc5NTA0YWNjOWUwNjdlMzY2MDY1ZDU3YzZmMmJjNzA5ZDA2ZWI5NGE4MTRkOTEwZTU4NzkifQ"
         }
       ]
     },
@@ -363,6 +335,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-15T08:21:56.110Z"
+    "at": "2026-09-20T08:19:24.227Z"
   }
 }

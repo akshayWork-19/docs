@@ -3,6 +3,9 @@ type: operations guide
 title: Adding and Maintaining Documentation Pages
 description: Add, revise, move, or retire documentation by choosing the source owner, synchronizing navigation and redirects, regenerating derived content, and running the applicable validation gates.
 tags: [documentation, operations, navigation, redirects, build-system]
+verified:
+  - by: openwiki/0.4.3
+    at: 2026-09-20T08:19:24.227Z
 sources:
   - id: openwiki-source-8037e2358a2c4f9b2c722a11
     resource: repo://AGENTS.md
@@ -35,9 +38,6 @@ sources:
   - id: openwiki-source-a39cb5ba9006abfe6280b6f8
     resource: repo://src/oss/openwiki/cli-reference.mdx
 generated: { by: "openwiki/0.4.3", at: "2026-09-18T08:20:50.944Z" }
-verified:
-  - by: openwiki/0.4.3
-    at: 2026-09-18T08:20:50.944Z
 ---
 
 # Adding and Maintaining Documentation Pages

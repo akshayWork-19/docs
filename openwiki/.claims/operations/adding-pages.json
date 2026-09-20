@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:3da1bec8e17d0d952d80fcc6810ed6e430bf3435b8eb6fb3c0e0188798da5cf0",
+  "pageVersion": "sha256:0c3dd6150f324794371bc6e988821aad3d04027fa70582aee5308c44407149c6",
   "claims": [
     {
       "id": "claim_50d5f754af2648b1a22070a9b6535576",
@@ -90,7 +90,7 @@
         },
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:d1207fb95323a6f7ecfb7342dcff26b9a84a6095b90853e6c5a2bc0e3df3146f"
+          "version": "repo-file-v1:sha256:b5d4386d78afa6c1eb1c9038bf0470146f8d777cbd3798470c8fd904fe5ec3a0"
         }
       ]
     },
@@ -100,7 +100,7 @@
       "evidence": [
         {
           "resource": "repo://Makefile#L99-L122",
-          "version": "repo-lines-v1:sha256:d99a82c9d529b45bb7a6838889cd4279f30f4a24bd1fd4924f7cf91f3558949f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxNDhiNjJiYTZkYmQzNjRiMzA2NjBhOGVlYmM3OTMzNzhlYzMxNzEyN2ZlNTQzZTA2NjkxYzYxMDIzMjVmMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlkODUwN2VmNmQ1ZDk1MGE5NjBkM2FiM2I1MTIxYTljZWExM2Y2MjZkOWYwMDgxNDc3YzY4ZTUxN2UyZTljYTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkZDE3MzBkYjYzMTczZTZlZGNiZDNkMWM4NzJlNWQ1YzI1NzBjNzNlZTc1ODIxZTIyMTYzYWMxNDM1OWIzY2IifQ"
+          "version": "repo-lines-v1:sha256:4d76967dd9b2656d508e7c3833e823c64d54e634ee34697c0c2e69f2bb08a6c4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxNDhiNjJiYTZkYmQzNjRiMzA2NjBhOGVlYmM3OTMzNzhlYzMxNzEyN2ZlNTQzZTA2NjkxYzYxMDIzMjVmMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlkODUwN2VmNmQ1ZDk1MGE5NjBkM2FiM2I1MTIxYTljZWExM2Y2MjZkOWYwMDgxNDc3YzY4ZTUxN2UyZTljYTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkZDE3MzBkYjYzMTczZTZlZGNiZDNkMWM4NzJlNWQ1YzI1NzBjNzNlZTc1ODIxZTIyMTYzYWMxNDM1OWIzY2IifQ"
         }
       ]
     },
@@ -257,10 +257,20 @@
           "version": "repo-lines-v1:sha256:a35b5d49b5d3f730517d0fdb038f602ea7fa2439fedfb57859a839326ee6a7d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGJiOGJhYjhiMTIwNzVhN2RkOWQ1MGM5Njg2ZGEwMjY2MWE2MDI0NDYzMzU2M2VlODdiYmRjMjdjY2M4YWI0YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjU1MDdkNjVhZTY1OGU3OGNiODQ1NmZhMDNjYTlmMWM5MDA3MzIzMDI1MTA4Zjg0NDY0NzRjYTM5YTlkZTRiMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGEzMDNmYmY5MGU4NWQ2YTc0ZGMxYmVhNjFlM2I1YjZlMWUyYWVjYjRkZTM5NGYzNTBiYzQ5MGI4MmMxNDUyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzE4ZDkxN2Y0MWEyYjlhYTZjNTllNmZjNWY2YjIxZWVlMTZjMzU2NjcyMThmY2JjODY3ZmM5OWNjZGQyMGRmMSJ9"
         }
       ]
+    },
+    {
+      "id": "claim_b10c0513f7b94f62aefd7691ca933296",
+      "statement": "Mintlify generates the endpoint pages for the configured OpenAPI sections at deployment rather than placing them in local build output; Agent Server and LangSmith REST use committed specifications, while Control Plane fetches its specification from `https://api.host.langchain.com/openapi.json`.",
+      "evidence": [
+        {
+          "resource": "repo://CLAUDE.md#L235-L247",
+          "version": "repo-lines-v1:sha256:28d8b0f603db48ee3140d586c55f832ac2412a4dfa5ba76b13236e1038ccd409:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwNmZhN2IwOTc1OWNiYzBhOGQ1NjBkYWViNjllN2U0YTljNWYyMDA1MGQyZWRmMjY5MjU5MmQxNzRmZGNhZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzYzcxNjhiNGVlMTlmNjZlZTY3ZTg1YmNmMWI1OTRkNjQyODg5NjAxZWJkYTAzNzg1M2E0ZTgxZTE3NWM5MDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU1YWVjZmI0NmQ5Yjg5N2E3YmNkNTQzMmY1ZjFkMzNlYTc5YzYxODQ3NDRlZDMxN2M5YTYwYjMyNjVkZDRkODIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc3Zjg0MWY0OTE4ZWIzN2VjNDdlOTI0ZGFiMDU0YTkzZDlmOTY4N2JjZjFlNDEzYTkwZDllOGEwODI3NWJjYjQifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-18T08:20:50.944Z"
+    "at": "2026-09-20T08:19:24.227Z"
   }
 }

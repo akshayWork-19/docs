@@ -5,7 +5,7 @@ description: Defines the boundary between externally operated SDK reference site
 tags: [api-reference, openapi, cross-references, mintlify, langsmith]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-09-18T08:20:50.944Z
+    at: 2026-09-20T08:19:24.227Z
 sources:
   - id: openwiki-source-759309714d08144a07e1b2e0
     resource: repo://.github/ISSUE_TEMPLATE/04-reference-docs.yml
@@ -37,7 +37,7 @@ sources:
     resource: repo://tests/unit_tests/test_check_cross_refs.py
   - id: openwiki-source-38d325b9c51f3c8dfd528917
     resource: repo://tests/unit_tests/test_filter_mint_broken_links.py
-generated: { by: "openwiki/0.4.3", at: "2026-09-17T08:22:51.028Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-09-20T08:19:24.227Z" }
 ---
 
 # Reference Documentation Integration
@@ -61,7 +61,7 @@ flowchart TD
   Deploy --> Pages["Generated endpoint pages"]
 ```
 
-This shows separate publication paths: semantic SDK links leave the repository for the external reference service, while OpenAPI inputs become Mintlify endpoint routes only during deployment.
+This diagram shows the separate publication paths: semantic SDK links leave the repository for the external reference service, while OpenAPI inputs become Mintlify endpoint routes only during deployment.
 
 ## Semantic SDK links
 
@@ -112,7 +112,7 @@ flowchart TD
   Mintlify --> Routes["Published endpoint routes"]
 ```
 
-This distinguishes committed inputs, a deployment-fetched input, and the transformed daily LangSmith input before Mintlify publishes endpoint routes. The generated endpoint pages are not present in local `build/`. Do not copy the Control Plane specification into the repository, and do not hand-author generated endpoint output.
+This diagram distinguishes committed inputs, a deployment-fetched input, and the transformed daily LangSmith input before Mintlify publishes endpoint routes. The generated endpoint pages are not present in local `build/`. Do not copy the Control Plane specification into the repository, and do not hand-author generated endpoint output.
 
 ### Agent Server validation
 
@@ -158,8 +158,8 @@ Change this repository when the issue is an authored semantic marker, a scoped m
 
 ## Related documentation
 
-- [Source map](/openwiki/architecture/source-map.md) — documentation-source and navigation ownership.
+- [Build system](/openwiki/architecture/build-system.md) — documentation-source and build ownership.
 - [GitHub Actions](/openwiki/integrations/github-actions.md) — scheduled automation and CI checks.
 - [Mintlify](/openwiki/integrations/mintlify.md) — renderer and deployment boundary.
 - [Cross-reference operations](/openwiki/operations/cross-references.md) — diagnosing and maintaining semantic links.
-- [Test overview](/openwiki/testing/test-overview.md) — choosing focused validation.
+- [Quickstart](/openwiki/quickstart.md) — local environment and command setup.

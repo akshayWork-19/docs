@@ -5,7 +5,7 @@ description: Explains independent language-route rendering and version-claim val
 tags: [versioning, documentation-pipeline, routes, package-validation, dependency-management]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-09-18T08:20:50.944Z
+    at: 2026-09-20T08:19:24.227Z
 sources:
   - id: openwiki-source-21617d8a6b2b570989a7c900
     resource: repo://.github/workflows/check-version-claims.yml
@@ -31,7 +31,7 @@ sources:
     resource: repo://tests/unit_tests/test_check_external_versions.py
   - id: openwiki-source-607673c5c40214b511f9e0a7
     resource: repo://tests/unit_tests/test_check_version_claims.py
-generated: { by: "openwiki/0.4.3", at: "2026-09-17T08:22:51.028Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-09-20T08:19:24.227Z" }
 ---
 
 # Language Versioning Strategy
@@ -50,7 +50,7 @@ They use some of the same language signals (`:::python`, `:::js`, and source pat
 | Authored source domain | Emitted route family | Navigation consequence |
 | --- | --- | --- |
 | Most `src/oss/` content, including LangChain, LangGraph, and Deep Agents outside `code/` | `/oss/python/...` and `/oss/javascript/...` | Add the emitted route to the corresponding Python or TypeScript Build dropdown. |
-| `src/oss/python/` or `src/oss/javascript/` | Only the matching route, with the source-language directory removed | Put the route only in its matching dropdown. |
+| `src/oss/python/` or `src/oss/javascript/` during a full build | Only the matching route, with the source-language directory removed | Put the route only in its matching dropdown. |
 | `src/oss/deepagents/code/` | `/oss/deepagents/code/...` | Keep the product route unprefixed. |
 | `src/oss/openwiki/` | `/oss/openwiki/...` | Keep one unprefixed artifact family; the same routes appear in both Build dropdowns. |
 | Ordinary `src/langsmith/` content | `/langsmith/...` | Place it in its applicable LangSmith navigation group. |
@@ -83,7 +83,7 @@ This diagram shows source classification and emitted routes; package requirement
 
 `build_all()` removes and recreates `build/`, renders Python OSS, JavaScript OSS, the two unversioned OSS products, ordinary LangSmith, and Managed Deep Agents variants, then copies shared files and npm snippets and generates `llms.txt` artifacts. Clearing output first prevents stale generated routes from surviving a full build.
 
-For each Markdown or MDX artifact, the builder first performs standard preprocessing, then—when a target language exists—rewrites MDX snippet imports, rewrites OSS links, and rewrites Managed Deep Agents links. Internal target `js` maps to the public `javascript` path segment. A `.md` input is emitted as `.mdx`; authored `src/` content is not modified.
+For each Markdown or MDX artifact, the builder first performs standard preprocessing, then—when a target language exists—rewrites MDX snippet imports, rewrites OSS links, and rewrites Managed Deep Agents links. Internal target `js` maps to the public `javascript` path segment.
 
 ```mermaid
 flowchart LR
@@ -102,11 +102,11 @@ flowchart LR
 
 This diagram shows the ordered transforms applied to one emitted Markdown artifact.
 
-`build_file()` follows the same classification for an existing individual file: ordinary OSS produces two artifacts; either unversioned OSS product produces one; a Managed Deep Agents page produces two; and shared or root-level inputs copy once. It raises `AssertionError` for a nonexistent file. Use a full build after broad route changes because it also clears stale output and regenerates derived indexes.
+`build_file()` follows the same broad classification for an existing individual file: ordinary OSS produces two artifacts; either unversioned OSS product produces one; a Managed Deep Agents page produces two; and shared or root-level inputs copy once. It raises `AssertionError` for a nonexistent file. Use a full build after broad route changes because it also clears stale output and regenerates derived indexes.
 
 ### Shared, language-only, and unversioned OSS
 
-Ordinary OSS pages are the dual-route case: a shared source produces `/oss/python/...` and `/oss/javascript/...`. Within that domain, a file below `src/oss/python/` or `src/oss/javascript/` participates only in its matching pass; the leading source-language directory is removed from the emitted route. Use those directories for genuinely language-specific material, not duplicate copies of shared pages.
+Ordinary OSS pages are the dual-route case: a shared source produces `/oss/python/...` and `/oss/javascript/...`. During the full-build language passes, a file below `src/oss/python/` or `src/oss/javascript/` participates only in its matching pass; the leading source-language directory is removed from the emitted route. Use those directories for genuinely language-specific material, not duplicate copies of shared pages.
 
 OpenWiki and Deep Agents Code are deliberate exceptions. They build once at `/oss/openwiki/...` and `/oss/deepagents/code/...`; conditional rendering uses the Python branch as a deterministic fallback. That fallback does **not** make either product Python documentation. Links within these product roots remain unprefixed, while an unqualified link from an unversioned product to ordinary OSS is rendered with the Python target.
 
@@ -124,7 +124,7 @@ JavaScript-only content.
 :::
 ```
 
-For a selected target, preprocessing removes the fences and retains matching content, while it removes a nonmatching supported block. Escaped `\:::` markers become literal `:::`. Unsupported labels and unclosed blocks remain unchanged. Opening and closing markers must use matching indentation. The renderer is regex-based and not code-fence-aware, so escape literal markers when documenting this syntax and do not rely on a Markdown code fence or nesting to protect them.
+For a selected target, preprocessing removes the fences and retains matching content, while it removes a nonmatching supported block. Escaped `\:::` markers become literal `:::`. Unsupported labels and unclosed blocks remain unchanged. The renderer is regex-based and not code-fence-aware, so escape literal markers when documenting this syntax and do not rely on a Markdown code fence or nesting to protect them.
 
 In a target-language render, an unqualified absolute OSS link such as `/oss/langgraph/overview` becomes `/oss/python/langgraph/overview` or `/oss/javascript/langgraph/overview`. The rewriter leaves already prefixed links, image paths, and OpenWiki and Deep Agents Code roots unchanged. A bare `/langsmith/managed-deep-agents...` link similarly follows the selected target; an explicitly qualified link stays explicit.
 
@@ -232,8 +232,8 @@ Builder tests cover unversioned OSS output and link behavior, scoped snippet imp
 
 ## See also
 
-- [Build system](/openwiki/architecture/build-system.md)
-- [GitHub Actions](/openwiki/integrations/github-actions.md)
-- [Adding pages](/openwiki/operations/adding-pages.md)
-- [Test overview](/openwiki/testing/test-overview.md)
+- [Source directory map](/openwiki/architecture/source-map.md)
+- [Markdown preprocessing pipeline](/openwiki/concepts/preprocessing.md)
+- [Adding and maintaining documentation pages](/openwiki/operations/adding-pages.md)
+- [Conditional rendering tests](/openwiki/testing/conditional-rendering.md)
 - [Writing versioned content](/openwiki/workflows/versioned-content.md)

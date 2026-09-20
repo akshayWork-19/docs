@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:a133fe1b540c00eddba2baec5dc5eb144f6e10a63f7f62013a3917b6e35d45ea",
+  "pageVersion": "sha256:4de096606d3777f1dd8e7f8bf93da90ced1e717b1ee6448cf16806383640b652",
   "claims": [
     {
       "id": "claim_ce02287599534e61a2585157859a8d87",
@@ -283,10 +283,64 @@
           "version": "repo-lines-v1:sha256:436a9f46b8963329cb139ea293d9906acfb9ec3b119075515f8ccc0309a00943:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0ZTI2MzFiYTFiMjk2NmEzZWQxM2UyMzg5ZDcxMDBkZGVlNDRlNGZhNzUzYTJlZmVjODc3Yzk0MzhhZTk0MDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMDU0NTQ0MWE2MmVmZmFkZWMxOGUxYTlhM2NmNmNjMjQ5MzdmMmMwNWRjNzQ0YzVkNmFlOWI3Mjk1ZjM5MzgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwMTg4MDAxMzBhNDcyZDFhNGFmZTJmNGMxMDI3ZWEwYjkyYzAyZWFjODVjN2VjNzI0YjU4NzdkNWM3ZjE1YjQifQ"
         }
       ]
+    },
+    {
+      "id": "claim_57dfb24304a446b8b8a3556d04aeb0eb",
+      "statement": "The MCP multimodal sample has one visible Python snippet that uses an MCP adapter and agent to inspect normalized text and image `ToolMessage` content blocks; its hidden executable harness supplies a local screenshot MCP server and asserts that an image block is returned.",
+      "evidence": [
+        {
+          "resource": "repo://src/code-samples/langchain/mcp-multimodal-tool-content.py#L1-L31",
+          "version": "repo-lines-v1:sha256:e63607211a025bb44c25a4b5a74374fd46174a76ef0719361f4b4e02d86547d8:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxM2UzMjljZjc4OGM4MGY3OWI4N2NjZjgwNzIyZmEzMDNiZDI4ZWMyMWU0MDM1ZWIwMzQzYTc0NGFlYTY1NjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyYWQ5OWJmNzE0ZWI4ZjY1ZGYzMjExNTNhYTM5M2M1MmQ2YjQ5NjNmMzRmMTJkYTI4ZjYzNGZkMTI0YmRhMDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzNTU3NzQ4NTAyZWRiNzNlMGU2ODhmYzNhZTlkZDVlMmI3N2FlNTk1ZjBlYmFiYTE3ZTFhN2RkODU2NWEyYzQifQ"
+        },
+        {
+          "resource": "repo://src/code-samples/langchain/mcp-multimodal-tool-content.py#L34-L90",
+          "version": "repo-lines-v1:sha256:1803b07db96a7e0e4b5b70f248b35b3f9aa5776d5ad3a3a25c43111f4a75f7cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxOGY5YTYxMWUzYWRjM2JhODhkMGQ2MjJjMTY2MzViYjkyYjg1ZjcyYWI2NmI2MzU2NTFjMTgwNGVmZjI1OTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MjBhYTZjOGI5MmRmYTcxODEwNTRkN2ZlOTllYzA4OWFmMmExYjdkYmI5YmEzODViMWNkOGM0NzI4NWQ0ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4M2I3ZDlhZjZhNTc3ZWQzZTI4NjdkZWQ2ZmNjYmU1YmQ2YjYxMWJmZDA0Zjk4ZGUyNDA2MjFkYzY3Yjc1MjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5069e7073d234cfa91fe8b0a21f8985b",
+      "statement": "The MCP tool-results source intentionally contains separate error-handling and metadata snippets, while its hidden harness runs a local divide-by-zero server, validates an error result or recovery response, and checks adapter metadata; its two markers make the source ineligible for a single-sample trace link.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/code_sample_tracing.py#L197-L217",
+          "version": "repo-lines-v1:sha256:d21737dd1e4a6bcf2c4661ddcef6634325dac9d9772d08180e9eee46586a7c2b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmNjU4MTNlOWE4NjZiMWIwM2QzMThkNzBiODk3OTNkM2FlZWY1ZWVkMmMyNTg0MTQzNzFhNmU2Njg3YWVlMDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlN2M5NTdiY2I0NGZiNjczYzk4YjAwNTBhNzVkMzgwODJkYjgxZDkxOGRlMzEzYTNmMDdjMTIzNTMwNmQ3ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI1YTc3MWE5YzBmYmUzNzkxZjg1MDgzMmFjNzJjZjI4MDljNDRhODNlMTExZTJkNDliYjllMDU5MjZlYTU2ODIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlM2FjYzQ4MjZiNGRiZDY3MjIwMTM2MzMzNzM4OTRkYTdiNWVjY2ZmMzhkMDAyOGQzOWIzZjNkZjM0NjFlMGEifQ"
+        },
+        {
+          "resource": "repo://src/code-samples/langchain/mcp-tool-results.py#L1-L49",
+          "version": "repo-lines-v1:sha256:f052dd95130728488659e73eb563fda28bb454d802bbd302774fe84f40f84c19:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4N2UwZDU4ZWQ4NDMzNThiYzY3NWQzYjIxOTkwOGU1ZGNjMjIzNjIwMGIyMzY5NjNmZTg4MTM2NmMwZmZlOWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyYWQ5OWJmNzE0ZWI4ZjY1ZGYzMjExNTNhYTM5M2M1MmQ2YjQ5NjNmMzRmMTJkYTI4ZjYzNGZkMTI0YmRhMDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzNTU3NzQ4NTAyZWRiNzNlMGU2ODhmYzNhZTlkZDVlMmI3N2FlNTk1ZjBlYmFiYTE3ZTFhN2RkODU2NWEyYzQifQ"
+        },
+        {
+          "resource": "repo://src/code-samples/langchain/mcp-tool-results.py#L52-L104",
+          "version": "repo-lines-v1:sha256:dc60ce839dc375896095a5a31dd4ae38fd084d954bf992f9d200a2f8ebc1a662:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxOGY5YTYxMWUzYWRjM2JhODhkMGQ2MjJjMTY2MzViYjkyYjg1ZjcyYWI2NmI2MzU2NTFjMTgwNGVmZjI1OTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MjBhYTZjOGI5MmRmYTcxODEwNTRkN2ZlOTllYzA4OWFmMmExYjdkYmI5YmEzODViMWNkOGM0NzI4NWQ0ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4M2I3ZDlhZjZhNTc3ZWQzZTI4NjdkZWQ2ZmNjYmU1YmQ2YjYxMWJmZDA0Zjk4ZGUyNDA2MjFkYzY3Yjc1MjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_98b6dd4aba4240eb9ddaabbb7bae32e1",
+      "statement": "The generated MCP multimodal and tool-error MDX files contain only reader-facing Python code rather than the local MCP server and assertion harnesses in their executable source files.",
+      "evidence": [
+        {
+          "resource": "repo://src/code-samples/langchain/mcp-multimodal-tool-content.py#L34-L90",
+          "version": "repo-lines-v1:sha256:1803b07db96a7e0e4b5b70f248b35b3f9aa5776d5ad3a3a25c43111f4a75f7cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxOGY5YTYxMWUzYWRjM2JhODhkMGQ2MjJjMTY2MzViYjkyYjg1ZjcyYWI2NmI2MzU2NTFjMTgwNGVmZjI1OTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MjBhYTZjOGI5MmRmYTcxODEwNTRkN2ZlOTllYzA4OWFmMmExYjdkYmI5YmEzODViMWNkOGM0NzI4NWQ0ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4M2I3ZDlhZjZhNTc3ZWQzZTI4NjdkZWQ2ZmNjYmU1YmQ2YjYxMWJmZDA0Zjk4ZGUyNDA2MjFkYzY3Yjc1MjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/code-samples/langchain/mcp-tool-results.py#L52-L104",
+          "version": "repo-lines-v1:sha256:dc60ce839dc375896095a5a31dd4ae38fd084d954bf992f9d200a2f8ebc1a662:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxOGY5YTYxMWUzYWRjM2JhODhkMGQ2MjJjMTY2MzViYjkyYjg1ZjcyYWI2NmI2MzU2NTFjMTgwNGVmZjI1OTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MjBhYTZjOGI5MmRmYTcxODEwNTRkN2ZlOTllYzA4OWFmMmExYjdkYmI5YmEzODViMWNkOGM0NzI4NWQ0ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4M2I3ZDlhZjZhNTc3ZWQzZTI4NjdkZWQ2ZmNjYmU1YmQ2YjYxMWJmZDA0Zjk4ZGUyNDA2MjFkYzY3Yjc1MjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/snippets/code-samples/mcp-multimodal-tool-content-py.mdx#L1-L29",
+          "version": "repo-lines-v1:sha256:546f9c4a342c27e994d9d55822ab8561d57c1dd13f90991ab9bd6db5a8e09c92:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlM2I0ZDVhZjU0ZWUxZjA5ZWM5OWNhZTRmMzg5NWVhYjI4MTkwY2RjZTAxNzdlNTY1ZmEwNzU2NzhjNzA4ODciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/snippets/code-samples/mcp-tool-errors-py.mdx#L1-L23",
+          "version": "repo-lines-v1:sha256:651620f6f3f9d5cf8f4bbc4d7af6b7a6ff8dbc2e62ecb6313563bd9461960d7a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlM2I0ZDVhZjU0ZWUxZjA5ZWM5OWNhZTRmMzg5NWVhYjI4MTkwY2RjZTAxNzdlNTY1ZmEwNzU2NzhjNzA4ODciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YzA2YzU2MWQ1YzMyNzM0MzY4NTI2OGE0NmIzMzkxZjM5OThlZWU4OTBkMmJlNTFmMGQyMWNjNGE1M2FlNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-18T08:20:50.944Z"
+    "at": "2026-09-20T08:19:24.227Z"
   }
 }

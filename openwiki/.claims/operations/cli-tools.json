@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:e1093b68bbaa4fbc957c5b9f792af27e69ad8018f16822dceb2626e1a838d3e3",
+  "pageVersion": "sha256:d7ffe11a5a4c6bcc039b9858ce3511a20de49f0ef998dba5396013852b8c02fa",
   "claims": [
     {
       "id": "claim_6644bd73a0cc460685ec7b13f96b2b44",
@@ -260,7 +260,7 @@
       "evidence": [
         {
           "resource": "repo://Makefile#L139-L178",
-          "version": "repo-lines-v1:sha256:062899e8d741851fe8b7eefc63a37acace8fa2a1097734d38d4ac61c3d7658b0:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNjRkMDAwYTRiY2E0YTVmOWU3YTI2ZmM5ZTVmOGUwYzE0NDhhOGVlYmIxZDhjODkzM2ZlNzQ1NmQ1OGM1YjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZjM2MjI5MWYyYjM1MGIyYWUwZjhhNDMxNTI0MjA3ZTA5ODEzNmM5MGE0MzkwNDQwZDk4OTY5YTVhNzZiMDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMWM1NjEyZmIzODM3ZTIyODUzOTY4Y2Y2ZDEzYWRjZjcwYmJjM2M0Y2RiNDY2ZGY2NGUzOGNiNmU2Yzc0MjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRiOTVhMGIxODkwMjBkMjhjYjYyYWM0MTZmM2MxNTJlYjY1ZTQxMDI0NWNiZWMzZTI4ZGM0ZjcxNDUwNGY0ODkifQ"
+          "version": "repo-lines-v1:sha256:e0e63761a27a56c78079179e75d5e979ec52edeba3838b14495fb1fe4f416b98:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhNjRkMDAwYTRiY2E0YTVmOWU3YTI2ZmM5ZTVmOGUwYzE0NDhhOGVlYmIxZDhjODkzM2ZlNzQ1NmQ1OGM1YjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZjM2MjI5MWYyYjM1MGIyYWUwZjhhNDMxNTI0MjA3ZTA5ODEzNmM5MGE0MzkwNDQwZDk4OTY5YTVhNzZiMDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMWM1NjEyZmIzODM3ZTIyODUzOTY4Y2Y2ZDEzYWRjZjcwYmJjM2M0Y2RiNDY2ZGY2NGUzOGNiNmU2Yzc0MjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRiOTVhMGIxODkwMjBkMjhjYjYyYWM0MTZmM2MxNTJlYjY1ZTQxMDI0NWNiZWMzZTI4ZGM0ZjcxNDUwNGY0ODkifQ"
         }
       ]
     },
@@ -379,10 +379,34 @@
           "version": "repo-lines-v1:sha256:35c8299cae4fec9ca35679c2b8851dde40f5399f1baa3041e7d943806f3a90dc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzYTQyOWVhMGM2YjgwZmFkZjFhZjQwYTkxYmViMmI3MmVkY2EwOGFiMmNhYmMzOTBlODRmN2Q2ODg5ZjdjM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4OWEwZmIyMTcxZjliNTk0YmQyZjA5YzQwMmEwYjU1MmRiNjNiNTBlZDBhNzE1OGEzMWQzMGFlYWRhYjVjMzgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY4MTcxMjNlNWUyMmEzMjFkNDQ2OGJjNmNiYjNkNGU0N2IzNzdlODc1Yzg1ZDQ0YWEwYzZiNDVmM2EzY2RhYWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwYjc0YWZkYzRlMzI2MGYwNmUyNzBmNzAyNGU5YWQyZGFlNTJiMWVmNDkxNmExZDJjODE4MmU4MjFiNzRmMWQifQ"
         }
       ]
+    },
+    {
+      "id": "claim_ae499188bdad4f10a89f88e8bde35881",
+      "statement": "`make install` provisions all project dependency groups, local npm dependencies, the global Mint CLI, and then invokes `make skills`; `make build` and `make dev` independently run `npm install` before invoking the Python pipeline.",
+      "evidence": [
+        {
+          "resource": "repo://Makefile#L123-L129",
+          "version": "repo-lines-v1:sha256:35fce74f839c9a22cf142c069698dee826667e8e65b9eee0c9982317dc1c9b41:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzZjNTgwMTljOTcwZTNiMTczMmFlNjZjOTAwODU2NDM4MjQ2OTUzZjEyY2JhMjlkNjE5YjAwNTcyZmZmMjQ1NyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTJhNWVkN2E2MDNkYTNjOGQ4NGZmMDQ4YTcxMjgyZjRmZjM4YzA3NmVlNTQzNjNhMGQzNjc1OWVjZWQ3ODM0YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzQ1NDY3MzRiYWY2ZTY2ZGQ0M2Q3MDVmZjg3ZDA5YmM5MjA1NTE4MDU3OTdlMDQzNDZhZTA4YjRjNDU2ODEyMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODcwZmYxMTQzZmQ5OGMwNzMwNjM0MTk2OTEwYTQ2ZmIzYmJlNzdlMzY0M2YwOGNjMGRlMTNjNzhiZGJiNmI1ZSJ9"
+        },
+        {
+          "resource": "repo://Makefile#L6-L14",
+          "version": "repo-lines-v1:sha256:12472bfb50bed2773bee4014d9ad5aceca8e31004b3df79ccd2db6a8a77c119d:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTAxZmFkY2FiMDRkNDgwYmFiMWY0Y2Y0Nzg0NzAyMmViMzNhMjhiM2E2ZmQ2YmJiMTg3ODMyYTY1Y2QxZmRlZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWVhOTIyODFkNTkyMGZjM2RiNDEyMWFiMDlmMDkwNGMwZjMwMjMyODg1MTljNGU4MzBjOTlkOWI2Y2IyYTk2NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmY2MzcwY2Y4MjJlZTVkYjJjYjI3NTMyZGY4OTczOGQwMjgwNTgxNjExZDcxZTA0ZDYxYjRmYTZhMDYxNDgxOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzIxYmMxNjY3MmZlMmU3OTUxMWJjMGI5MjIwNjdiY2FkNjZiNDQ2MGYzNzJkZTk3ZGZkNTdiZDcwMDhmYTE4ZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5204437363774442be10683a459f2f2c",
+      "statement": "`make test` invokes pytest with network sockets disabled while permitting Unix sockets, so it is the repository test wrapper intended for local pipeline behavior rather than network-dependent integrations.",
+      "evidence": [
+        {
+          "resource": "repo://Makefile#L120-L121",
+          "version": "repo-lines-v1:sha256:e2efeed54df9d4a5e6d9d31620f641fcf3ce522e298e08e37017193b016acf62:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDAwN2I1MTE4ODQ1MWRiMzc5M2FlMjRlYTE3OTQ4NTgzNjcyZWM1NTE0MmFmYWI5NWYzMTQxM2RmMTFkNWI5ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmIzN2VjYmQ0YWFlOTE2MDQxZjg1NzM1ZDcyMGFiNWY0MjQ2ZmIxZWI4YmE3ZDI4ZmEyNGE3YmU0NzkxYjBmNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDQzN2RmMmFkNGNjYzM2ZTQ1YTg0ZTY2MWJkNzhiNmFmMmM1ZjhiMWMyYzUxMmExNmU4NzUzM2UzY2Y5OWQzZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWU5YWJiOWEzZWRhMzRhNDIyYzZlYjVhMzA2ZDVkYzcwMGVlNmQ3YzQ4ODg5NmQ1ZjE5MzZkNWZiNDU5NjI5OCJ9"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-11T08:21:01.441Z"
+    "at": "2026-09-20T08:19:24.227Z"
   }
 }
